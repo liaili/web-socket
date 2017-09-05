@@ -8,19 +8,19 @@ var wsUrl = "ws://172.20.25.2:9000/video";
 var rtspUrl = "rtsp://172.20.25.3/user=admin&password=&channel=1&stream=0.sdp";
 var ws = wsUrl + "?url=" + encodeURIComponent(rtspUrl);
 
-//第二步  打开一个 web socket
+>//第二步  打开一个 web socket
 websocket = new WebSocket(ws);
 
-websocket.onopen=function(){
+>websocket.onopen=function(){
   // Web Socket 已连接上，使用 send() 方法发送数据,可有可无
   ws.send("发送数据");
 }
-websocket.onmessage=function(evt){
+>websocket.onmessage=function(evt){
   //接受接口数据
   var received_msg = evt.data;
 }
 
-websocket.onclose = function(){ 
+>websocket.onclose = function(){ 
   // 关闭 websocket
 };
 
