@@ -18,7 +18,6 @@ websocket.onopen=function(){
 >websocket.onmessage=function(evt){     
   //接受接口数据      
   var received_msg = evt.data;      
-  
 }
 
 >websocket.onclose = function(){        
