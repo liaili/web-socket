@@ -13,14 +13,17 @@ websocket = new WebSocket(ws);
 websocket.onopen=function(){        
     // Web Socket 已连接上，使用 send() 方法发送数据,可有可无        
     ws.send("发送数据");        
-}
+}       
+
 >websocket.onmessage=function(evt){     
   //接受接口数据      
-  var received_msg = evt.data;
+  var received_msg = evt.data;      
+  
 }
 
 >websocket.onclose = function(){        
-    // 关闭 websocket
+    // 关闭 websocket     
+    
 };
         
 网上有很多关于web socket的介绍，这里我就不多说了，我会说一些在开发过程中遇到的问题和发现的好用的地方，希望会对其他人有帮助。
@@ -33,7 +36,7 @@ websocket.onopen=function(){
 >websocket.addEventListener('open', function (e) {      
     // Web Socket 已连接上，使用 send() 方法发送数据,可有可无        
     ws.send("发送数据");        
-});     
+});            
 
 websocket.addEventListener('message', function (e) {        
     //接受接口数据      
