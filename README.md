@@ -3,7 +3,7 @@
 
     最近做的一个项目用到了web socket技术，那首先介绍下web socket的语法和用法吧，其实以下介绍有个坑，下面我会将解决方法如下：
 
->//第一步 接口地址
+>//第一步 接口地址     
 var wsUrl = "ws://172.20.25.2:9000/video";      
 var rtspUrl = "rtsp://172.20.25.3/user=admin&password=&channel=1&stream=0.sdp";     
 var ws = wsUrl + "?url=" + encodeURIComponent(rtspUrl);
