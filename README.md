@@ -36,12 +36,12 @@ websocket.onopen=function(){
     ws.send("发送数据");        
 });            
 
-websocket.addEventListener('message', function (e) {        
+>websocket.addEventListener('message', function (e) {        
     //接受接口数据      
     var received_msg = evt.data;      
 });     
 
-websocket.addEventListener('close', function (e) {      
+>websocket.addEventListener('close', function (e) {      
     // 关闭 websocket     
 });
         
